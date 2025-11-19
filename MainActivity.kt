@@ -59,7 +59,6 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun AmazonLoginScreen(modifier: Modifier = Modifier) {
-    // "in editText it should display your name As Ayush and registration number As 12324839"
     var email by remember { mutableStateOf("Ayush") }
     var password by remember { mutableStateOf("12324839") }
 
@@ -105,7 +104,7 @@ fun AmazonLoginScreen(modifier: Modifier = Modifier) {
 
         Text(
             text = "Forgot password?",
-            color = Color(0xFF007185), // Amazon blue
+            color = Color(0xFF007185),
             fontWeight = FontWeight.Medium,
             modifier = Modifier
                 .fillMaxWidth()
@@ -122,7 +121,7 @@ fun AmazonLoginScreen(modifier: Modifier = Modifier) {
                 .height(48.dp),
             shape = RoundedCornerShape(8.dp),
             colors = ButtonDefaults.buttonColors(
-                containerColor = Color(0xFFF0C14B), // Amazon yellow
+                containerColor = Color(0xFFF0C14B), 
                 contentColor = Color.Black
             )
         ) {
